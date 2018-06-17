@@ -30,14 +30,80 @@
       <h1>Hoja de Vida</h1>
         <h2>José Daniel Camacho Adames</h2>
           <h3>Bogotá, 26-07-1992</h3>
-
-        <h2>Educación</h2>
     </header>
 
     <nav>
       <a href="../index.html">Inicio</a> |
       <a href="../html/experiencia.html" target="_blank">Experiencia</a>
     </nav>
+
+    <section>
+        <h2>Educación</h2>
+          <table border="1", cellpadding="10", cellspacing="0">
+            <thead>
+              <tr>
+                <th>Año</th>
+                <th>Título</th>
+                <th>Institución</th>
+                <th>Lugar</th>
+                <th>¿Culminó?</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>2010</td>
+                <td>Administrador de Empresas</td>
+                <td>Universidad Nacional de Colombia</td>
+                <td>Bogotá</td>
+                <td>Sí</td>
+              </tr>
+              <tr>
+                <td>2017</td>
+                <td>Seminario Gerenciamiento de territorio</td>
+                <td>IMS</td>
+                <td>Bogotá</td>
+                <td>Sí</td>
+              </tr>
+              <tr>
+                <td>2018</td>
+                <td>Desarrollador Web</td>
+                <td>Next U</td>
+                <td>Bogotá</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Agregar Estudios</h3>
+            <form autocomplete="on">
+              <label for="year"><strong>Año: </strong></label>
+              <select id="year" autofocus required>
+                <option value="">Elija una opción</option>
+                <option value="1">2010</option>
+                <option value="2">2011</option>
+                <option value="2">2012</option>
+                <option value="2">2013</option>
+                <option value="2">2014</option>
+                <option value="2">2015</option>
+                <option value="2">2016</option>
+                <option value="2">2017</option>
+                <option value="2">2018</option>
+              </select><br>
+
+              <label for="title"><strong>Título: </strong></label>
+              <input type="text" id="title" name="title" placeholder="Escriba el título obtenido" autofocus required><br>
+
+              <label for="institution"><strong>Institución: </strong></label>
+              <input type="text" id="institution" name="institution" placeholder="Escriba la institución" autofocus required><br>
+
+              <label for="place"><strong>Lugar: </strong></label>
+              <textarea id="place" name="comments" rows="1" cols="40" placeholder="Escriba el lugar" autofocus required></textarea><br>
+
+              <input type="submit" id="submit_education" name="ssubmit_education" value="Enviar" title="Enviar">
+            </form>
+    </section>
+
   </body>
 
   <footer>
